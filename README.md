@@ -12,5 +12,4 @@ Este es un faucet simple y funcional, hecho en HTML + Node (Vercel Serverless), 
 ## Variables de entorno
 
 - FAUCETPAY_API_KEY (opcional si usas lógica real)
-- RECIPIENT_USER (tu dirección de FaucetPay)
-
+- RECIPIENT_USER (nickrey006@gmail.com)
