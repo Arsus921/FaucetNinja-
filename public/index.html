@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Faucet Exprés</title>
+  <style>
+    body { background: #111; color: #fff; font-family: sans-serif; text-align: center; padding-top: 10%; }
+    button { padding: 10px 30px; background: #00c853; color: white; font-size: 18px; border: none; border-radius: 8px; }
+    button:hover { background: #009624; }
+  </style>
+</head>
+<body>
+  <h1>🚿 Reclama Cripto Gratis</h1>
+  <p>Presiona para recibir tu recompensa</p>
+  <button onclick="reclamar()">💰 Reclamar</button>
+  <p id="respuesta"></p>
+  <script>
+    async function reclamar() {
+      const r = await fetch('/api/claim');
+      const data = await r.json();
+      document.getElementById('respuesta').innerText = data.message;
+    }
+  </script>
+</body>
+</html>
